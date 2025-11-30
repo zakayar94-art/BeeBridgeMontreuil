@@ -1,260 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
+/* css de l'acceuil qui comprend aussi le studio'*/
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    line-height: 1.6;
-}
-
-
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
 }
 
 
 .header {
-    background-color: #0a0f1e;
-    padding: 1rem 0;
-    border-bottom: 3px solid black;
+    background-color: #f2f2f2;
+    padding: 10px 0;
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 
-.logo-title {
-    margin-left: -20px;
+.logo-title img {
+    width: 60px;
 }
 
-.logo-img {
-    height: 50px;
-}
 
 .main-nav {
-    background-color: white;
-    padding: 1rem 2rem;
-    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex: 1;
-    margin: 0 2rem;
+    gap: 20px;
 }
 
 .nav-buttons {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 15px;
 }
 
 .nav-btn {
-    color: black;
     text-decoration: none;
-    font-weight: 500;
-    padding: 0.3rem 0;
+    color: black;
+    font-size: 15px;
 }
 
 .nav-btn:hover {
-    color: #4a9eff;
+    color: orange;
 }
+
 
 .language-switcher {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    border: 2px solid black;
-    padding: 0.4rem 1rem;
-    background-color: white;
+    gap: 5px;
 }
 
 .lang-btn {
     background: none;
     border: none;
-    font-weight: bold;
-    font-size: 1rem;
     cursor: pointer;
-    color: black;
 }
 
-.lang-btn:hover {
-    color: #4a9eff;
+.flag-icon {
+    width: 18px;
 }
 
-.lang-btn.active {
-    color: #4a9eff;
-}
-
-.language-switcher span {
-    color: black;
-    font-weight: bold;
-}
 
 .hero-section {
-    background-color: white;
-    padding: 3rem 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.hero-media {
+.hero-media img {
     width: 100%;
-    height: 400px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
-    margin-bottom: 2rem;
+    max-height: 350px;
+    object-fit: cover;
 }
 
-.placeholder-media {
-    font-size: 1.5rem;
-    color: #666;
+.hero-logo img {
+    width: 120px;
+    margin-top: 20px;
 }
 
-.hero-logo {
-    text-align: center;
-    margin-top: -3rem;
-    margin-bottom: 2rem;
+.hero-text p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.logo-box {
-    background-color: white;
-    border: 3px solid black;
-    padding: 1.5rem 3rem;
-    display: inline-block;
-}
-
-.logo-box h2 {
-    font-size: 1.5rem;
-    color: black;
-}
-
-.hero-text {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.text-box {
-    background-color: white;
-    border: 3px solid black;
-    padding: 2rem 4rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.text-box p {
-    font-size: 1.2rem;
-    color: black;
-}
 
 .studio-section {
-    background-color: #0a0f1e;
-    padding: 4rem 0;
-}
-
-.studio-title {
-    text-align: center;
-    margin-bottom: 3rem;
+    padding: 40px 0;
+    background-color: white;
 }
 
 .studio-title h2 {
-    background-color: white;
-    color: black;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 2rem;
-    border: 3px solid white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .studio-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
-}
-
-.studio-image {
-    background-color: white;
-    border: 3px solid white;
-    height: 400px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.placeholder-image {
-    font-size: 1.5rem;
-    color: #666;
+.studio-image img {
+    width: 250px;
+    height: auto;
+
 }
 
-.studio-description {
-    background-color: white;
-    border: 3px solid black;
-    padding: 3rem;
+.studio-description p {
+    font-size: 18px;
+    max-width: 400px;
 }
 
-.description-box h3 {
-    font-size: 1.8rem;
-    color: black;
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.description-box p {
-    font-size: 1.1rem;
-    color: black;
-    text-align: center;
-}
-
-
-@media (max-width: 1024px) {
-    .nav-wrapper {
-        flex-direction: column;
-    }
-
-    .main-nav {
-        flex-direction: column;
-        margin: 1rem 0 0 0;
-        width: 100%;
-    }
-
-    .nav-buttons {
-        justify-content: center;
-    }
-
-    .studio-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo-img {
-        height: 40px;
-    }
-
-    .nav-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-media {
-        height: 250px;
-    }
-
-    .text-box {
-        padding: 1.5rem 2rem;
-    }
-
-    .studio-image {
-        height: 300px;
-    }
-}
