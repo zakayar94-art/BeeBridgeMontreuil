@@ -1,13 +1,31 @@
-/* css de l'acceuil qui comprend aussi le studio'*/
+/* le css accueil et studio */
+:root {
+  --bg-dark: #0a1227;
+  --bg-card: #131a2e;
+  --bg-card-hover: #1a2338;
+  --border-color: #1e3a5f;
+  --text-primary: #ffffff;
+  --text-secondary: #a0b3cc;
+  --accent-blue: #0074e4;
+  --accent-hover: #6bb3ff;
+  --section-max-width: 1100px;
+  --font-titles: 'Bebas Neue', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+}
+
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
 }
 
 
 .header {
-    background-color: #f2f2f2;
+    background-color: var(--bg-card);
     padding: 10px 0;
+    border-bottom: 2px solid var(--border-color);
 }
 
 .nav-wrapper {
@@ -18,7 +36,6 @@ body {
     margin: 0 auto;
 }
 
-
 .logo-title img {
     width: 60px;
 }
@@ -26,24 +43,27 @@ body {
 
 .main-nav {
     display: flex;
+    justify-content: center; 
     align-items: center;
-    gap: 20px;
+    flex: 1; 
 }
 
 .nav-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex: 1; 
 }
+
 
 .nav-btn {
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
     font-size: 15px;
 }
 
 .nav-btn:hover {
-    color: orange;
+    color: var(--accent-hover);
 }
 
 
@@ -57,6 +77,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    color: var(--text-primary);
 }
 
 .flag-icon {
@@ -81,37 +102,42 @@ body {
 }
 
 .hero-text p {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     margin-top: 10px;
+    font-family: var(--font-titles);
 }
 
 
 .studio-section {
     padding: 40px 0;
-    background-color: white;
+    background-color: var(--bg-card);
+    
 }
 
-.studio-title h2 {
+.studio-title h3 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: var(--font-titles);
+
 }
 
 .studio-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .studio-image img {
     width: 250px;
     height: auto;
-
+    border: 2px solid var(--border-color);
 }
 
 .studio-description p {
     font-size: 18px;
     max-width: 400px;
+    color: var(--text-secondary);
 }
 
