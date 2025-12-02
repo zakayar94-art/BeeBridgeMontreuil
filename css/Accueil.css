@@ -1,9 +1,8 @@
-/* le css accueil et studio */
 :root {
     --bg-dark: #0a1227;
     --bg-card: #131a2e;
     --bg-card-hover: #1a2338;
-    --border-color: #1e3a5f;
+   /* --border-color: #1e3a5f; */
     --text-primary: #ffffff;
     --text-secondary: #a0b3cc;
     --accent-blue: #0074e4;
@@ -31,6 +30,7 @@ body {
     margin: 0;
     margin-left: 0;
 }
+
 
 .hero-section {
     position: relative;
@@ -101,10 +101,13 @@ body {
     background-color: var(--accent-hover);
 }
 
+
 .studio-section {
-    padding: 60px 0 60px 80px;
+    padding: 60px 0;
     background-color: var(--bg-card);
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .studio-title {
@@ -198,5 +201,3 @@ body {
         font-size: 14px;
     }
 }
-
-
